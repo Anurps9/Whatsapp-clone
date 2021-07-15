@@ -17,7 +17,7 @@ function App() {
        <Detail
          contactNumber="9027658096"
          lastMessage={str.substr(0,170)+"..."}
-         contactImg="D:\Project\Whatsapp-clone-1\public\logo512.png"
+         contactImg="logo512.png"
        />
        {/* <OtherUserInfo name="Anurag Sisodiya" lastSeen="One hour ago" />
       <SentMessageBox content={str} />
