@@ -1,11 +1,15 @@
-.aligh{
+.align{
     display:inline;
+    width:100px;
+    height: 100px;
 }
 .OtherUserNumber{
-    display:inline;
+    margin-left:80px;
+    font-weight: bold;
+}
+.OtherUserLast{
+    margin-left:40px;
 }
 
-.OtherUserLast{
-    display:inline;
-}
+
 
