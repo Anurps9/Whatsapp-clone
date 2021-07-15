@@ -1,11 +1,10 @@
-import React from "react";
-import  Button from "antd";
+import './Footer.css';
 
 function Leftbutton(){
     return (
-      <>
-        <Button variant="primary">chats</Button>
-      </>
+      <div className="flex-container">
+        <button className ="btn" type="primary">chats</button>
+      </div>
     );
 }
 export default Leftbutton;

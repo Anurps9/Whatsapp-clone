@@ -1,13 +1,12 @@
-import React from "react";
-import Photo from "../Photo/Photo";
-
-
 function Detail(props) {
     return (
-      <div style={{ width: "100%", zIndex: 5, padding: "5%" }}>
-        <Photo/>
-        <h2>{props.contactNumber}</h2>
-        <h3>{props.lastMessage}</h3>
+      <div
+        className="align"
+        style={{ width: "90%", zIndex: 5, padding: "5%", height: "30px" }}
+      >
+        <img className="align"src={props.contactImg} align="left" alt="Contact-Pic" />
+        <div className="OtherUserNumber">{props.contactNumber}</div>
+        <div className="OtherUserLast">{props.lastMessage}</div>
       </div>
     );
   

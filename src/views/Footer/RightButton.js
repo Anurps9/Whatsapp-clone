@@ -1,11 +1,10 @@
-import React from "react";
-import Button from "antd";
+import "./Footer.css";
 
 function Rightbutton() {
   return (
-    <>
-      <Button variant="primary">contacts</Button>
-    </>
+    <div className="flex-container">
+      <button className="btn">Contacts</button>
+    </div>
   );
 }
 export default Rightbutton;
