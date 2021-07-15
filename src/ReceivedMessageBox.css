@@ -1,0 +1,12 @@
+.ReceivedMessageBox{
+	margin-left: 0;
+	background-color: hotpink;
+	color: white;
+	width: fit-content;
+	height: fit-content;
+	max-width: 16rem;
+	padding: 15px 30px;
+	margin: 10px;
+	text-align: left;
+	border-radius: 10px;
+}
