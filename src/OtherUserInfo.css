@@ -1,0 +1,19 @@
+.OtherUserInfo{
+	background-color: black;
+	color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin:  0;
+}
+
+.OtherUserName{
+	font-size: 30px;
+	padding: 5px 0 5px 10px;
+}
+
+.OtherUserLastSeen{
+	font-size: 15px;
+	font-weight: lighter;
+	padding: 0 0 10px 10px;
+}
