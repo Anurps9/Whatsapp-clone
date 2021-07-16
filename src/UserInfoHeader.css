@@ -1,0 +1,16 @@
+.UserInfoHeader{
+	width: 29rem;
+	background-color: forestgreen;
+	color: white;
+	padding: 10px 10px;
+	margin: auto;
+	margin-top: 5px;
+	border-radius: 10px;
+}
+#name{
+	font-size: 20px;
+	font-weight: bold;
+}
+#mobileNumber{
+	font-weight: light;
+}
