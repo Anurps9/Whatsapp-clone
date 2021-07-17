@@ -1,12 +1,13 @@
 .ProfilePictureExpanded{
 	width: 32rem;
 	text-align: center;
+	width: 100%;
 }
 
 img{
 	width: 30rem;
 	margin-top: 2.5%;
 	height: 20em;
-	border-radius: 5px;
+	border-radius: 10px;
 	border-width: 2px;
 }
