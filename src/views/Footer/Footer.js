@@ -1,13 +1,13 @@
 import './Footer.css';
-import Leftbutton from './LeftButton';
-import Rightbutton from './RightButton';
+import LeftButton from './LeftButton';
+import RightButton from './RightButton';
 
 
 function Footer() {
     return (
       <div className="footer">
-        <Leftbutton />
-        <Rightbutton />
+        <LeftButton />
+        <RightButton />
       </div>
     );
 }
