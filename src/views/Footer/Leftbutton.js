@@ -1,10 +1,10 @@
 import './Footer.css';
 
-function Leftbutton(){
+function LeftButton(){
     return (
       <div className="flex-container">
         <button className ="btn" type="primary">chats</button>
       </div>
     );
 }
-export default Leftbutton;
+export default LeftButton;
