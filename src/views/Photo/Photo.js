@@ -1,11 +1,10 @@
+import "./Photo.css"
 import React from "react";
-import './Photo.css';
 
 function Photo(props) {
-  var style = props.style;
   return (
-    <div className="UserPhoto" >
-      <img style={style} src={props.contactImg} align="left" alt="Contact-Pic" />
+    <div className="Grp" >
+      <img className="GrpPhoto"src={props.contactImg} alt="Contact-Pic" />
     </div>
   );
   
