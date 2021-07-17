@@ -1,7 +1,7 @@
 import "./Details.css";
 function Detail(props) {
     return (
-      <div style={{ width: "90%", zIndex: 5, padding: "5%", height: "30px" }}>
+      <div className="OtherUserMessage">
         <img
           className="align"
           src={props.contactImg}
