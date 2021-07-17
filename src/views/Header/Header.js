@@ -13,7 +13,7 @@ function Header (props){
    return (
      <div style={{width: "100%"}}>
          <Photo style={photoStyle} contactImg="https://picsum.photos/200"/>
-         <div className="Header">Anurag Sisodiya</div>
+         <div className="Header">{props.name}</div>
      </div>
    );
 }

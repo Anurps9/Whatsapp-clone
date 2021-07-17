@@ -8,9 +8,7 @@ import GroupInfoScreen from '../GroupInfoScreen/GroupInfoScreen';
 
 function App() {    
    return (
-     <div className="App" s>
-        <Header/>
-        <GroupInfoScreen/>
+     <div className="App" >
      </div>
    );
 }
