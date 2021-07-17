@@ -1,0 +1,17 @@
+body, html{
+	width: 100%;
+}
+.UserDescriptionScreen{
+	width: 100%;
+}
+.footerContainer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.headerContainer{
+	width: 100%;
+}
+.UserDescriptionCardContainer{
+	width: 100%;
+}
