@@ -1,15 +1,17 @@
 import './App.css';
-
+import ChatHistoryScreen from '../ChatHistoryScreen/ChatHistoryScreen.js';
 import DirectChatScreen from '../DirectChatScreen/DirectChatScreen.js';
-import Header from '../Header/Header.js';
-import Footer from '../Footer/Footer.js';
-import Detail from '../Detail/Detail.js';
-import GroupInfoScreen from '../GroupInfoScreen/GroupInfoScreen';
+import GroupInfoScreen from '../GroupInfoScreen/GroupInfoScreen.js';
+import ContactScreen from '../ContactScreen/ContactScreen.js';
 
 function App() {    
    return (
-     <div className="App" >
-     </div>
+      <div className="App" >
+        {/*<DirectChatScreen />*/}
+        {/*<ChatHistoryScreen />*/}
+        {/*<GroupInfoScreen />*/}
+        <ContactScreen />
+      </div>
    );
 }
 

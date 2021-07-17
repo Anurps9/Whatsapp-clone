@@ -4,4 +4,5 @@
 	background-color: black;
 	line-height: 3.7rem;
 	padding-left: 10px;
+	display: flex;
 }

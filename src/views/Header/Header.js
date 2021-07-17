@@ -11,9 +11,9 @@ function Header (props){
     borderRadius: "2rem"    
   }
    return (
-     <div style={{width: "100%"}}>
+     <div className="Header">
          <Photo style={photoStyle} contactImg="https://picsum.photos/200"/>
-         <div className="Header">{props.name}</div>
+         <div className="HeaderInfo">{props.name}</div>
      </div>
    );
 }
