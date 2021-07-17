@@ -27,5 +27,5 @@ function ChatHistoryScreen(props){
     );
 }
 
-export default ChatHistoryScreen;;
+export default ChatHistoryScreen;
 
