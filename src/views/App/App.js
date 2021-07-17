@@ -1,10 +1,16 @@
 import './App.css';
-import UserDescriptionScreen from '../UserDescriptionScreen/UserDescriptionScreen.js';
+
+import DirectChatScreen from '../DirectChatScreen/DirectChatScreen.js';
+import Header from '../Header/Header.js';
+import Footer from '../Footer/Footer.js';
+import Detail from '../Detail/Detail.js';
+import ChatHistoryScreen from '../ChatHistoryScreen/ChatHistoryScreen';
 
 function App() {    
    return (
-     <div className="App">
-       <UserDescriptionScreen /> 
+     <div className="App" s>
+        <Header/>
+        <ChatHistoryScreen/>
      </div>
    );
 }
