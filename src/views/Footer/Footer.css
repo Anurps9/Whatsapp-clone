@@ -1,8 +1,5 @@
 .footer{
-    font-size: xx-large;
     display:  flex;
-	position: fixed;
-	bottom: 0;
 	width: 100%;
 }
 
@@ -17,8 +14,12 @@
 	color: white;
 }
 
-
 .btn{
     text-align: center;
     font-size: 30px;
+    width: 16rem;
+    height: 3rem;
+    background-color: black;
+    border-width: 0;
+    color: white;
 }

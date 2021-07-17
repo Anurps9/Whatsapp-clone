@@ -2,9 +2,7 @@ import './Footer.css';
 
 function LeftButton(){
     return (
-      <div className="flex-container">
-        <button className ="btn" type="primary">chats</button>
-      </div>
+        <button className="btn" type="primary">chats</button>
     );
 }
 export default LeftButton;
