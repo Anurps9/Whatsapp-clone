@@ -1,0 +1,11 @@
+.OtherUserInfoContainer{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.FooterContainer{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}

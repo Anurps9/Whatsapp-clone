@@ -3,22 +3,12 @@
 	width: 100%;
 }
 
-.flex-container{
-    display:  inline-block;
-	padding-left: 10px;
-    width: 50%;
-	height: 70px;
-	border-radius: 15px;
-	border: 1px solid black;
-	background-color: green;
-	color: white;
-}
-
 .btn{
+	display: inline;
     text-align: center;
     font-size: 30px;
-    width: 16rem;
-    height: 3rem;
+    width: 50%;
+    height: 2.7rem;
     background-color: black;
     border-width: 0;
     color: white;
