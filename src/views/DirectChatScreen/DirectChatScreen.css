@@ -1,4 +1,6 @@
 body, html{
+	/* position: relative; */
+	display: flex;
 	margin: 0;
 	padding: 0;
 	background-color: #222;
@@ -9,7 +11,9 @@ body, html{
 	top: 0;
 	width: 100%;
 }
-
+/* .MessagesContainer{
+	position: fixed;
+} */
 .FooterContainer{
 	position: fixed;
 	width: 100%;

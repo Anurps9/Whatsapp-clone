@@ -10,8 +10,14 @@ function ChatDetail(props) {
       borderRadius: "2rem"    
     }
     return (
-      <div className="ChatDetail">
-        <Photo style={photoStyle} contactImg="https://picsum.photos/200"/>
+      <div
+        className="ChatDetail"
+        onClick={() => {
+          props.forChatScreen({ left: "-100%", width: "100%" });
+          props.forMessages({ left: 0, width: "100%" });
+        }}
+      >
+        <Photo style={photoStyle} contactImg="https://picsum.photos/200" />
         <div className="ChatInfoContainer">
           <div className="OtherUserNumber">{props.contactNumber}</div>
           <div className="OtherUserLast">{props.lastMessage}</div>
