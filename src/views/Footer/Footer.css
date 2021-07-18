@@ -7,9 +7,13 @@
 	display: inline;
     text-align: center;
     font-size: 30px;
-    width: 50%;
+    width: 100%;
     height: 2.7rem;
     background-color: black;
     border-width: 0;
     color: white;
+}
+
+.buttonContainer{
+    width: 100%;
 }

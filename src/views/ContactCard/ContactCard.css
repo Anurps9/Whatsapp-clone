@@ -1,10 +1,16 @@
 .ContactCard{
 	background-color: #111;
+	display: flex;
 	height: 3.6rem;
 	width: 95%;
 	color: white;
+	padding: .5rem;
 	padding-left: 5px;
 	border-radius: 10px;
 	border-width: 0;
 	margin: 5px auto;
+}
+
+.memberNumber{
+	font-size: .8rem;
 }

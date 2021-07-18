@@ -1,17 +1,3 @@
-.Grp{
-    width: 20%; 
-    z-index: 5 ;
-    padding-bottom: 5%;
-    margin:auto;
-    
-}
-.GrpPhoto{
-    width:50%;
-    height:50%;
-}
-
-
 .UserPhoto{
     display: inline;
-    vertical-align: middle;
 }
