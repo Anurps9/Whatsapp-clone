@@ -20,11 +20,7 @@ function ChatHistoryScreen(props){
     let mainContainer = React.createElement( "div", { className: "ContactDetail" },contactDetail);
     return (
         <div className="ChatHistoryScreen">
-          <Header name="Anurag Sisodiya"/>
           <div className="OtherUserDetailContainer" style={{paddingBottom: "3rem"}}>{mainContainer}</div>
-          <div className="footerContainer">
-            <Footer/>
-          </div>
         </div>       
     );
 }

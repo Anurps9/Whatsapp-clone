@@ -1,5 +1,6 @@
 import ContactCard from '../ContactCard/ContactCard.js';
-import Header from '../Header/Header';
+import Header from '../Header/Header.js';
+import Footer from '../Footer/Footer.js'
 import React from 'react';
 
 export default function ContactScreen(props){
@@ -19,7 +20,6 @@ export default function ContactScreen(props){
 
 	return(
 		<div className="ContactScreen">
-			<Header name="My Contacts"/>
 			{contactList}
 		</div>
 	)

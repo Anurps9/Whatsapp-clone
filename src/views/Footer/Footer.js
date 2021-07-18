@@ -3,11 +3,11 @@ import LeftButton from './LeftButton';
 import RightButton from './RightButton';
 
 
-function Footer() {
+function Footer(props) {
     return (
       <div className="footer">
-        <LeftButton />
-        <RightButton />
+        <LeftButton forChatHistory = {props.forChatHistory} forContacts = {props.forContacts}/>
+        <RightButton forChatHistory = {props.forChatHistory} forContacts = {props.forContacts}/>
       </div>
     );
 }

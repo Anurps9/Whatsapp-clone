@@ -1,9 +1,42 @@
-body, html{
-	background-color: '#222' ;
+body, html{background-color: '#222' ;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 .App{
+	width: 100%;
 	background-color: '#222';
+}
+
+.contactScreenContainer{
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	top: 3.7rem;
+	transition-property: left;
+	transition-duration: 0.5s;
+}
+
+.chatHistoryScreenContainer{
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	top: 3.7rem;
+	transition-property: left;
+	transition-duration: 0.5s;
+}
+
+.footerContainer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 8;
+}
+
+.headerContainer{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 8;
 }
