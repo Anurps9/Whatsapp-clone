@@ -6,8 +6,16 @@ import RightButton from './RightButton';
 function Footer(props) {
     return (
       <div className="footer">
-        <LeftButton forChatHistory = {props.forChatHistory} forContacts = {props.forContacts}/>
-        <RightButton forChatHistory = {props.forChatHistory} forContacts = {props.forContacts}/>
+        <LeftButton 
+          forChatHistory = {props.forChatHistory} 
+          forContacts = {props.forContacts}
+          forDirectMessage = {props.forDirectMessage}
+        />
+        <RightButton 
+          forChatHistory = {props.forChatHistory} 
+          forContacts = {props.forContacts}
+          forDirectMessage = {props.forDirectMessage}
+          />
       </div>
     );
 }

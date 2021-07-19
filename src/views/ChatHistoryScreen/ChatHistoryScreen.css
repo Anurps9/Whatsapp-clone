@@ -1,9 +1,4 @@
-.Total{
-	width:100%;
-}
 .ChatHistoryScreen{
-	position: relative;
-}
-.MessagesToUser{
-	position: absolute;
+	width: 100%;
+	background-color: #222;
 }

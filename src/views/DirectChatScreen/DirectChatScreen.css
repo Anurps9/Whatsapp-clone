@@ -1,21 +1,17 @@
-body, html{
-	/* position: relative; */
-	display: flex;
-	margin: 0;
-	padding: 0;
-	background-color: #222;
-}
-
 .OtherUserInfoContainer{
 	position: fixed;
 	top: 0;
-	width: 100%;
+	z-index: 5;
 }
-/* .MessagesContainer{
-	position: fixed;
-} */
-.FooterContainer{
-	position: fixed;
+.DirectChatScreen{
+	position: absolute;
+	background-color: #222;
 	width: 100%;
-	bottom: 0;
+	transition-property: left;
+	transition-duration: 0.5s;
+} 
+
+.MessageInputField{
+	position: fixed;
+	bottom: 2.7rem;
 }

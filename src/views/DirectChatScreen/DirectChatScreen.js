@@ -11,24 +11,21 @@ export default function DirectChatScreen(props){
 
 	var messages = [];
 	for(let i=0; i<100; ++i){
-		messages.push(<SentMessageBox content={str}/>);
-		messages.push(<ReceivedMessageBox content={str}/>);
+		messages.push(<SentMessageBox key={i} content={str}/>);
+		messages.push(<ReceivedMessageBox key={100+i} content={str}/>);
 	}
 
 	let mainContainer = React.createElement('div', {className: 'messageList'}, messages);
 
 	return (
-		<div>
+		<div className="DirectChatScreen" onClick={() => props.forOtherUser({top: 0})}>
 			<div className="OtherUserInfoContainer">
 	    		<OtherUserInfo name="Anurag Sisodiya" lastSeen="One hour ago" />
 	       	</div>
-	        <div className="MessagesContainer" style = {{paddingTop: "5rem", paddingBottom: "2rem"}}>
-	       		{mainContainer}
-	        </div>
-	        <div className="FooterContainer">
-		        <MessageInputField />
-		        <Footer />
-	        </div>
+	       		{mainContainer}	   
+	       	<div>
+		       	<MessageInputField />
+	       	</div>    		
 		</div>
 	)
 }
