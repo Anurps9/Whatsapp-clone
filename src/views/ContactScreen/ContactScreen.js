@@ -1,5 +1,6 @@
 import ContactCard from '../ContactCard/ContactCard.js';
 import React from 'react';
+import './ContactScreen.css';
 
 export default function ContactScreen(props){
 
@@ -13,9 +14,7 @@ export default function ContactScreen(props){
 			/>
 		)
 	}
-
 	var contactList = React.createElement("div", {className: "contactDetails"}, contacts);
-
 	return(
 		<div className="ContactScreen">
 			{contactList}

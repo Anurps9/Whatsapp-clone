@@ -9,24 +9,6 @@ body, html{background-color: '#222' ;
 	background-color: '#222';
 }
 
-.contactScreenContainer{
-	position: absolute;
-	overflow: hidden;
-	width: 100%;
-	top: 3.7rem;
-	transition-property: left;
-	transition-duration: 0.5s;
-}
-
-.chatHistoryScreenContainer{
-	overflow: hidden;
-	position: absolute;
-	width: 100%;
-	top: 3.7rem;
-	transition-property: left;
-	transition-duration: 0.5s;
-}
-
 .footerContainer{
 	width: 100%;
 	position: fixed;
@@ -38,5 +20,73 @@ body, html{background-color: '#222' ;
 	width: 100%;
 	position: fixed;
 	top: 0;
-	z-index: 8;
+	z-index: 3;
+}
+
+/* Chat Screen */
+.chatScreen-enter{
+	position: absolute;
+	width: 100%;
+	left: -100%;
+}
+.chatScreen-enter-active{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	transition: left 200ms ease;
+}
+.chatScreen-enter-done{
+	position: absolute;
+	width: 100%;
+	left: 0;
+}
+.chatScreen-exit{
+	position:  absolute;
+	width: 100%;
+	left: 0;
+}
+.chatScreen-exit-active{
+	position: absolute;
+	width: 100%;
+	left: -100%;
+	transition: left 200ms ease;
+}
+.chatScreen-exit-done{
+	position: absolute;
+	width: 100%;
+	left: -100%;
+}
+
+/* Contact Screen */
+.contactScreen-enter{
+	position: absolute;
+	width: 100%;
+	left: 100%;
+}
+.contactScreen-enter-active{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	transition: left 200ms ease;
+}
+.contactScreen-enter-done{
+	position: absolute;
+	width: 100%;
+	left: 0;
+}
+.contactScreen-exit{
+	width: 100%;
+	position:  absolute;
+	left: 0;
+}
+.contactScreen-exit-active{
+	width: 100%;
+	position: absolute;
+	left: 100%;
+	transition: left 200ms ease;
+}
+.contactScreen-exit-done{
+	width: 100%;
+	position: absolute;
+	left: 100%;
 }
