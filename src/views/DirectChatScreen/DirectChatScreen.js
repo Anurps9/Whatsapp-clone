@@ -18,7 +18,7 @@ export default function DirectChatScreen(props){
 	let mainContainer = React.createElement('div', {className: 'messageList'}, messages);
 
 	return (
-		<div className="DirectChatScreen" onClick={() => props.forOtherUser({top: 0})}>
+		<div className="DirectChatScreen">
 			<div className="OtherUserInfoContainer">
 	    		<OtherUserInfo name="Anurag Sisodiya" lastSeen="One hour ago" />
 	       	</div>

@@ -1,5 +1,6 @@
 import ContactCard from '../ContactCard/ContactCard.js';
 import React from 'react';
+import './ContactScreen.css';
 
 export default function ContactScreen(props){
 

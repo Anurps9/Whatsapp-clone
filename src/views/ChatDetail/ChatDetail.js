@@ -13,9 +13,7 @@ function ChatDetail(props) {
       <div
         className="ChatDetail"
         onClick={() => {
-          props.forDirectMessage({left: "0"});
-          props.forChatHistory({left: "100%"});
-          props.forContacts({left: "200%"});
+          props.handleClick();
         }}
       >
         <Photo style={photoStyle} contactImg="https://picsum.photos/200" />

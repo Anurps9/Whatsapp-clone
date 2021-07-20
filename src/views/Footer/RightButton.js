@@ -4,11 +4,7 @@ import { faListUl} from '@fortawesome/free-solid-svg-icons'
 
 function RightButton(props) {
   return (
-    <button className="btn" onClick={() => {
-      props.forChatHistory({left: "-100%"}); 
-      props.forDirectMessage({left: "-200%"});
-      props.forContacts({left: 0});
-    }}><FontAwesomeIcon icon={faListUl}/></button>
+    <button onClick={() => props.handleClick()} className="btn"><FontAwesomeIcon icon={faListUl}/></button>
   );
 }
 export default RightButton;

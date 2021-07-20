@@ -2,11 +2,14 @@
 	position: fixed;
 	top: 0;
 	z-index: 5;
+	width: 100%;
 }
 .DirectChatScreen{
 	position: absolute;
 	background-color: #222;
 	width: 100%;
+	padding-top: 3.4rem;
+	padding-bottom: 5rem;
 	transition-property: left;
 	transition-duration: 0.5s;
 } 

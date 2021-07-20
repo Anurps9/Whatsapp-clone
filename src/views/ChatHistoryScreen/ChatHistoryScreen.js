@@ -2,8 +2,8 @@ import React,{useState} from "react";
 import Footer from "../Footer/Footer.js";
 import ChatDetail from "../ChatDetail/ChatDetail.js";
 import Header from "../Header/Header.js";
-import './ChatHistoryScreen.css';
 import DirectChatScreen from "../DirectChatScreen/DirectChatScreen.js";
+import './ChatHistoryScreen.css';
 
 function ChatHistoryScreen(props){
 
@@ -16,9 +16,7 @@ function ChatHistoryScreen(props){
           contactNumber={str1}
           lastMessage={str.substr(0, 50) + "..."}
           contactImg="logo512.png"
-          forDirectMessage={props.forDirectMessage}
-          forChatHistory={props.forChatHistory}
-          forContacts={props.forContacts}
+          handleClick = {props.handleChatClick}
         />
       );
     }
