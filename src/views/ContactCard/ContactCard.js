@@ -10,18 +10,19 @@ export default function ContactCard(props){
     	borderRadius: "2rem"    
   	}
 	return (
-		<div className="ContactCard">
-			<div className="PhotoContainer">
-				<Photo style={photoStyle} contactImg={props.imgSrc}/>
-			</div>
-			<div className="InfoContainer">
-				<div>
-					{props.name}
-				</div>
-				<div className="memberNumber">
-					{props.number}	
-				</div>
-			</div>
-		</div>
-	)
+    <div
+      className="ContactCard"
+      onClick={() => {
+        props.handleClick();
+      }}
+    >
+      <div className="PhotoContainer">
+        <Photo style={photoStyle} contactImg={props.imgSrc} />
+      </div>
+      <div className="InfoContainer">
+        <div>{props.name}</div>
+        <div className="memberNumber">{props.number}</div>
+      </div>
+    </div>
+  );
 }
