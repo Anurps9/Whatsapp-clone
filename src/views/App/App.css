@@ -90,3 +90,37 @@ body, html{background-color: '#222' ;
 	position: absolute;
 	left: 100%;
 }
+
+/* Direct chat Screen */
+.directChatScreen-enter{
+	position: absolute;
+	width: 100%;
+	left: -100%;
+}
+.directChatScreen-enter-active{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	transition: left 200ms ease;
+}
+.directChatScreen-enter-done{
+	position: absolute;
+	width: 100%;
+	left: 0;
+}
+.directChatScreen-exit{
+	position:  absolute;
+	width: 100%;
+	left: 0;
+}
+.directChatScreen-exit-active{
+	position: absolute;
+	width: 100%;
+	left: -100%;
+	transition: left 200ms ease;
+}
+.directChatScreen-exit-done{
+	position: absolute;
+	width: 100%;
+	left: -100%;
+}

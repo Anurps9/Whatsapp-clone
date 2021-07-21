@@ -2,7 +2,7 @@ import './UserDescriptionCard.css';
 
 export default function UserDescriptionCard(props){
 	return (
-		<div className="UserDescriptionCard">
+		<div className="UserDescriptionCard" >
 			<div>
 				{props.name}
 			</div>
