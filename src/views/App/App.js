@@ -39,6 +39,7 @@ function App() {
         setInContacts(false);
       }
   }
+  
 
   return (
     <div className="App">
@@ -47,7 +48,7 @@ function App() {
           <ChatHistoryScreen handleChatClick = {handleChatClick}/>
       </CSSTransition>
       <CSSTransition in={inContacts} unmountOnExit timeout={200} classNames="contactScreen">
-          <ContactScreen />
+          <ContactScreen handleContactClick = {handleChatClick}/>
       </CSSTransition>
       <CSSTransition in={inDirectChat} unmountOnExit timeout={200} classNames="directChatScreen">
           <DirectChatScreen />

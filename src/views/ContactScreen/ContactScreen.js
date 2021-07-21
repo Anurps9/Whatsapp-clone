@@ -11,6 +11,7 @@ export default function ContactScreen(props){
 				imgSrc="https://picsum.photos/200"
 				name="Anurag"
 				number="+91-6397211088"
+				handleClick={props.handleContactClick}
 			/>
 		)
 	}
