@@ -14,7 +14,7 @@ export default function UserDescriptionScreen(props){
 				<ProfilePictureExpanded src="https://picsum.photos/200" />
 			</div>
 			<div className="UserDescriptionCardContainer">
-				<UserDescriptionCard name="Anurag Sisodiya" number="+91-6397211086"/>
+				<UserDescriptionCard name="Anurag Sisodiya" number="+91-6397211086" />
 			</div>
 			<div className="footerContainer">
 				<Footer />
