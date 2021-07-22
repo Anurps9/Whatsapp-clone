@@ -29,21 +29,13 @@ export default function DirectChatScreen(props){
 
 	return (
 		<div className="DirectChatScreen">
-			<CSSTransition in={header} unmountOnExit timeout={200} classNames="OtherUser">
-				<div className="OtherUserInfoContainer">
-				<div>
-					<OtherUserInfo handleClick={handleClick} name="Anurag Sisodiya" lastSeen="One hour ago" /></div>
-					<MessageInputField />
-      			
-				</div>
-				  
-			</CSSTransition>
-			<CSSTransition in={header} unmountOnExit timeout={200} classNames="OtherUser">
-				{mainContainer}  
-			</CSSTransition>
-			<CSSTransition in={showOtherUserInfo} unmountOnExit timeout={200} classNames="userDescription">
-          		<UserDescriptionScreen/>
-      		</CSSTransition>    		
+			<div className="OtherUserInfoContainer">
+	    		<OtherUserInfo handleClick={props.handleOtherUserClick} name="Anurag Sisodiya" lastSeen="One hour ago" />
+	       	</div>
+	       		{mainContainer}	   
+	       	<div>
+		       	<MessageInputField />
+	       	</div>    		
 		</div>
 	)
 }
