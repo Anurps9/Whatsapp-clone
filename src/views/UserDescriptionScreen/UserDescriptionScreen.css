@@ -3,14 +3,7 @@ body, html{
 }
 .UserDescriptionScreen{
 	width: 100%;
-}
-.footerContainer{
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-}
-.headerContainer{
-	width: 100%;
+	padding-top: 3.4rem;
 }
 .UserDescriptionCardContainer{
 	width: 100%;

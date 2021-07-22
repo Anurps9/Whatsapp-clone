@@ -20,7 +20,7 @@ export default function DirectChatScreen(props){
 	return (
 		<div className="DirectChatScreen">
 			<div className="OtherUserInfoContainer">
-	    		<OtherUserInfo name="Anurag Sisodiya" lastSeen="One hour ago" />
+	    		<OtherUserInfo handleClick={props.handleOtherUserClick} name="Anurag Sisodiya" lastSeen="One hour ago" />
 	       	</div>
 	       		{mainContainer}	   
 	       	<div>

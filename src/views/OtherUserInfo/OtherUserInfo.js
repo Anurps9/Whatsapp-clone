@@ -16,7 +16,7 @@ export default function OtherUserInfo(props){
 		borderRadius: "2rem"		
 	}
 	return(
-		<div className="OtherUserInfo">
+		<div onClick={() => props.handleClick()} className="OtherUserInfo">
 			<div className="PhotoContainer">
 				<Photo contactImg="https://picsum.photos/200" style = {photoStyle}/>
 			</div>

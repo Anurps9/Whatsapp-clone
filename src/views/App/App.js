@@ -15,29 +15,42 @@ function App() {
   const [inChatHistory, setInChatHistory] = useState(true);
   const [inContacts, setInContacts] = useState(false);
   const [inDirectChat, setInDirectChat] = useState(false);
+  const [inUserDescription, setInUserDescription] = useState(false);
 
   function handleRightButtonClick(){
-      if(inContacts === false){
-        setInContacts(true);
-        setInChatHistory(false);
-        setInDirectChat(false);
-      }
+    if(inContacts === false){
+      setInContacts(true);
+      setInChatHistory(false);
+      setInDirectChat(false);
+      setInUserDescription(false);
+    }
   }
 
   function handleLeftButtonClick(){
-      if(inChatHistory === false){
-        setInChatHistory(true);
-        setInContacts(false);
-        setInDirectChat(false);
-      }
+    if(inChatHistory === false){
+      setInChatHistory(true);
+      setInContacts(false);
+      setInDirectChat(false);
+      setInUserDescription(false);
+    }
   }
 
   function handleChatClick(){
-      if(inDirectChat === false){
-        setInDirectChat(true);
-        setInChatHistory(false);
-        setInContacts(false);
-      }
+    if(inDirectChat === false){
+      setInDirectChat(true);
+      setInChatHistory(false);
+      setInContacts(false);
+      setInUserDescription(false);
+    }
+  }
+
+  function handleOtherUserClick(){
+    if(inUserDescription === false){
+      setInUserDescription(true);
+      setInDirectChat(false);
+      setInChatHistory(false);
+      setInContacts(false);
+    }
   }
 
   return (
@@ -47,10 +60,13 @@ function App() {
           <ChatHistoryScreen handleChatClick = {handleChatClick}/>
       </CSSTransition>
       <CSSTransition in={inContacts} unmountOnExit timeout={200} classNames="contactScreen">
-          <ContactScreen />
+          <ContactScreen handleOtherUserClick={handleOtherUserClick}/>
       </CSSTransition>
       <CSSTransition in={inDirectChat} unmountOnExit timeout={200} classNames="directChatScreen">
-          <DirectChatScreen />
+          <DirectChatScreen handleOtherUserClick = {handleOtherUserClick}/>
+      </CSSTransition>
+      <CSSTransition in={inUserDescription} unmountOnExit timeout={200} classNames="userScreen"> 
+        <UserDescriptionScreen />
       </CSSTransition>
       <div className="footerContainer">
          <Footer handleRightButtonClick = {handleRightButtonClick} handleLeftButtonClick = {handleLeftButtonClick}/>
